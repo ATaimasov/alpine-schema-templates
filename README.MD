@@ -2,7 +2,7 @@
 
 ### What it is
 
-This project leverages Alpine.js to generate reactive templates + uses a field schema system. No extra dependencies, no bundlers, no Virtual DOM. Core logic is ~100 lines (excluding template strings and the framework itself). Perfect for quickly embedding a reactive templating system where none exists — especially in legacy codebases.
+This project leverages Alpine.js to generate reactive templates + uses a field schema system. No extra dependencies, no bundlers, no Virtual DOM. Core logic is ~200 lines (excluding template strings and the framework itself). Perfect for quickly embedding a reactive templating system where none exists — especially in legacy codebases.
 
 ### How it works
 
@@ -40,7 +40,7 @@ MIT License.
 
 ### Что это
 
-Проект реализует возможности Alpine.js для генерации реактивных шаблонов + использует схему полей. Никаких лишних зависимостей, никаких сборщиков, виртуального DOM. Код на ~100 строк, если не считать сами шаблоны и фреймворк. Подойдет для быстрого встраивания шаблонизатора с реактивностью там, где его нет, особенно в легаси системах.
+Проект реализует возможности Alpine.js для генерации реактивных шаблонов + использует схему полей. Никаких лишних зависимостей, никаких сборщиков, виртуального DOM. Код на ~200 строк, если не считать сами шаблоны и фреймворк. Подойдет для быстрого встраивания шаблонизатора с реактивностью там, где его нет, особенно в легаси системах.
 
 ### Как это работает
 
