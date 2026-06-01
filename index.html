@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru" class="html">
   <head>
     <meta charset="UTF-8" />
@@ -50,15 +50,46 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" x-data="">
       <div class="main__container bg">
         <section class="section">
           <div class="section__container">
-            <h1 class="section__title">Starter HTML Template</h1>
-            <p class="section__text">
-              This is a starter template for your website.
-            </p>
+            <h1 class="section__title">Alpine Components</h1>
+            <p class="section__text">Easy way to make</p>
           </div>
+        </section>
+
+        <!-- COMPONENTS -->
+        <section class="section input-fields">
+          <div
+            class="input-field"
+            x-t="COMPONENTS.input('name', 'storeExample')"
+          ></div>
+          <div
+            class="input-field"
+            x-t="COMPONENTS.input('subname', 'storeExample')"
+          ></div>
+        </section>
+
+        <div
+          class="checkbox-field"
+          x-t="COMPONENTS.checkbox('checkbox', 'storeExample')"
+        ></div>
+        <!-- ARRAY INSIDE SCHEMA -->
+        <div
+          class="radio-group"
+          x-t="COMPONENTS.radio('choise', 'storeExample')"
+        ></div>
+
+        <section class="section field-infos">
+          <div
+            class="field-info"
+            x-t="COMPONENTS.storageFieldInfo('name', 'storeExample')"
+          ></div>
+          <div
+            class="field-info"
+            x-t="COMPONENTS.storageFieldInfo('subname', 'storeExample')"
+          ></div>
         </section>
       </div>
     </main>
@@ -69,6 +100,8 @@
       </div>
     </footer>
 
+    <script src="./x-t.js"></script>
     <script src="./scripts.js"></script>
+    <script src="./alpinejs@3.15.8.min.js"></script>
   </body>
 </html>
