@@ -1,0 +1,234 @@
+/* base styles */
+
+/* base root styles start  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.html {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  vertical-align: baseline;
+  color: #ffffff;
+  background-color: #5295af;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.section,
+.section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+/* base root styles end  */
+
+/* base fonts params */
+.section__title {
+  font-family: inherit;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.section__subtitle {
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.section__text {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: inherit;
+}
+/* base fonts params end*/
+
+/* base styles for custom elements */
+.btn {
+  text-transform: uppercase;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.logo {
+  line-height: 0;
+  color: inherit;
+  user-select: none;
+}
+.icon {
+  fill: currentColor;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* custom styles start */
+.bg {
+  color: #ffffff;
+  background-color: rgba(66, 127, 162, 0.2862745098);
+}
+
+.header,
+.footer {
+  padding: 40px;
+}
+.header__container {
+  row-gap: 20px;
+}
+.footer__container {
+  padding: 5px;
+  font-size: 13px;
+  text-align: center;
+}
+.main__container {
+  padding: 0 15px;
+}
+
+.section {
+  padding: 40px 0;
+}
+.section__container {
+  gap: 30px;
+  max-width: 1200px;
+}
+.section__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn {
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+.btn:is(:focus-visible, :hover):not(:disabled) {
+  outline: none;
+  opacity: 0.8;
+}
+.btn:disabled {
+  position: relative;
+  cursor: not-allowed;
+}
+.btn:disabled::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.input:placeholder {
+  transition: opacity 0.3s ease-in-out;
+}
+.input:focus:not([readonly])::placeholder {
+  opacity: 0.7;
+}
+
+.link {
+  transition: opacity 0.3s ease-in-out;
+}
+.link:is(:focus-visible, :hover) {
+  outline: none;
+  opacity: 0.8;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.nav__item {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.copyrights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+  .header__container {
+    flex-direction: column;
+  }
+}

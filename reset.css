@@ -1,0 +1,244 @@
+/*blocks*/
+html, body, div, header, footer, main, nav, section, article, aside, form,
+/*text*/
+h1, h2, h3, h4, h5, h6, p, span, pre, a,
+/*list*/
+ul, ol, li,
+/*table*/
+caption, table, tbody, td, th, tr, tfoot, thead,
+/*img*/
+figcaption, figure, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  vertical-align: baseline;
+  box-sizing: border-box;
+  /* don't allow browser to autochange font-size */
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* this semantic tags default style is inline */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:not([href]) {
+  cursor: default;
+}
+
+/*form reset styles*/
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input[readonly] {
+  cursor: default;
+  /*  hide blinkinkg cursor */
+  caret-color: transparent;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+}
+
+/* removes default input search styles in different browsers */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration,
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+button,
+input,
+select,
+textarea {
+  color: #222;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+button,
+input,
+select {
+  line-height: normal;
+  text-transform: none;
+}
+
+/*form reset styles end*/
+
+/*maximum*/
+
+abbr,
+acronym,
+address,
+applet,
+audio,
+big,
+blockquote,
+canvas,
+center,
+dd,
+del,
+details,
+dfn,
+dl,
+dt,
+embed,
+fieldset,
+hgroup,
+iframe,
+ins,
+kbd,
+label,
+legend,
+mark,
+menu,
+object,
+output,
+ruby,
+samp,
+strike,
+sub,
+summary,
+sup,
+time,
+tt,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*dont change font*/
+b,
+strong,
+i,
+em,
+cite,
+q,
+s,
+u,
+code,
+small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+u {
+  text-decoration-style: wavy;
+}
+
+legend {
+  white-space: normal;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+/* removes pseudo elements that browsers add by default. */
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  max-width: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* need alternatives
+if you want to disable outline on focus
+will work in contrast mode in any case
+*/
+:focus,
+a:active,
+a:hover {
+  outline: transparent;
+}
